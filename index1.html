@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700;800&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        .s {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            background-color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        .s:hover {
+            background-color: rgb(31, 93, 175);
+            box-shadow: 1px;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+
+        .content_team_details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .img_container {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: visible;
+            margin-bottom: 50px;
+            margin-top: 0px;
+        }
+
+        .img_container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content_team {
+            text-align: center;
+        }
+
+        .heading_name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .profession {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 70px;
+        }
+
+        .social_link_team {
+            margin-top: 20px;
+        }
+
+        .icon_profile {
+            margin-right: 10px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .icon_profile:hover {
+            color: #333;
+        }
+
+        body {
+            font-family: "Baloo Bhai 5", sans-serif;
+        }
+
+        .shubham {
+            margin-top: 80px;
+            color: white;
+            height: 250px;
+        }
+
+        .card {
+            box-shadow: 5%;
+            height: 300px;
+            width: 290px;
+        }
+
+        .container {
+            font-family: "Baloo Bhai 2", sans-serif;
+        }
+
+        .nav-link {
+            font: size 11px;
+            color: rgba(0, 0, 0, 0.717);
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .heading_logo {
+            color: mediumslateblue;
+        }
+
+        .nav-link:hover {
+            color: rgb(227, 249, 35);
+        }
+
+        .s_j {
+            height: 500px;
+        }
+
+        .j_s {
+            height: 500px;
+        }
+
+        .hideg {
+            color: brown;
+        }
+
+        .img-set {
+            height: 30vh;
+            background-image: linear-gradient(rgba(65, 65, 202, 0.82), rgba(54, 54, 234, 0.74)), url(./project2.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .card_img {
+            size: 50px;
+        }
+
+        .font {
+            color: rgb(67, 101, 197);
+        }
+
+        .cardimg {
+            height: 300px;
+            background-color: blueviolet;
+        }
+
+        .our_team {
+            width: 100%;
+            height: 80vh;
+            margin: 100px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container_ourteam {
+            margin-top: 150px;
+        }
+
+        .content_team_details {
+            width: 100%;
+            height: 350px;
+            background-color: #8856e4;
+            position: relative;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .content_team_details:hover {
+            background-color: rgb(62, 45, 94) !important;
+        }
+
+        .img_container {
+            width: 210px;
+            height: 210px;
+            background-color: white;
+            border-radius: 200px;
+            position: absolute;
+            left: 50%;
+            top: -110px;
+            transform: translateX(-50%);
+            background-position: top;
+            background-size: cover;
+            border: 8px solid white;
+        }
+
+        .content_team {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 45px;
+        }
+
+        .sd {
+            margin-bottom: 100px;
+        }
+
+        .s {
+            background-color: hotpink;
+            height: 120px;
+            width: 120px;
+            border-radius: 70%;
+        }
+
+        .proimg {
+
+            height: 400px;
+            background-color: #666;
+        }
+
+        .imgj {
+            height: 100px;
+            width: 150px;
+        }
+
+        .card1 {
+            height: 550px;
+            background-color: #e8d9d9;
+        }
+
+        .co {
+            background-color: white;
+
+        }
+
+        .l {
+            background-color: blue;
+            height: 500px;
+            margin-top: 200px;
+        }
+
+        .c {
+            background-color: burlywood;
+            width: 100px;
+            height: 40px;
+        }
+
+        .input_newsletter {
+            height: 40px;
+            width: 200px;
+        }
+
+        .ic {
+            height: 35px;
+            width: 35px;
+
+            margin-left: 9px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="container">
+
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container col-12 mt-4">
+                            <div class="justify-content-start">
+                                <a class="navbar-brand " href="#">
+                                    <h3 class="heading_logo"><b>logo.</b></h3>
+                            </div>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav">
+                                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav">
+                                        <a class="nav-link" href="#">Pricing</a>
+                                    </li>
+                                    <li class="nav dropdown">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Pages
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Blogs</a></li>
+                                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                                            <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav">
+                                        <a class="nav-link" href="#">Services</a>
+                                    </li>
+                                    <li class="nav">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+
+                                    <div class="nav">
+                                        <button class="btn btn-primary rounded-pill" type="button">get started</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="container p-5">
+                    <div class="text-center">
+                        <button class="btn btn-info rounded-pill mb-4">Welcome to Our Site</button>
+                        <h1><b>We Are Digital</b></h1>
+                        <h2><b>Agency With Digital Solutions</b></h2>
+                        <h3><b>Solutions</b></h3>
+                        <p>Lorem ipsum amet consectetur adipisicing elit. Recusandae culpa Quos ex placeat nesciunt
+                            soluta
+                            recusandae vero pariatur excepturi provident odit.</p>
+                        <button class="btn btn-danger rounded-pill me-2">Start a Project</button>
+                        <button class="btn btn-outline-danger rounded-pill" disabled>Contact Us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="./img (1).png" class="img-fluid" alt="banner img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="./88e39625-b966-4992-bc1d-fec5e2e77959.jpeg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6">
+                <button class="btn btn-info rounded-pill mb-4">About Us</button>
+                <h1><b>Why Our Agency?</b></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ad sed voluptates quis eligendi saepe
+                    laboriosam hic aspernatur voluptatibus autem nemo culpa ipsum, sunt impedit architecto molestias
+                    iste ullam explicabo ducimus id? Ipsam natus, suscipit laboriosam accusantium itaque eum
+                    recusandae!</p>
+                <div class="details_about">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-end">
+
+
+                            <i class="fa-solid fa-check-double" style="color: chartreuse;margin-top: 15px;"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ullam vero laborum
+                                placeat animi.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-end">
+                            <i class="fa-solid fa-check-double"
+                                style="color: chartreuse; margin-top: 15px; "></i>
+                        </div>
+                        <div class="col-11">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ullam vero laborum
+                                placeat animi.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-end">
+                            <i class="fa-solid fa-check-double" style="color: chartreuse;margin-top: 15px;"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ullam vero laborum
+                                placeat animi.</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded-0">Learn More</button>
+
+            </div>
+        </div>
+    </div>
+    <div class=" tbdr d-flex justify-content-center mt-5 container">
+        <button class="btn btn-info rounded-pill w-26" type="button">Service / Features</button>
+    </div><br>
+    <div class="container d-flex justify-content-center"><B>
+            <h1><b>Our Features</b></h1>
+        </B>
+    </div>
+    <div class="'container d-flex justify-content-center">
+        <p> Lorem ipsum doloibus nobis inventore vero! Animi repellat ad, ipsam fugiat temporibus enim!.<br> Vitae
+            adipisci consectetur fugit quas quis alias possimus ipsa.
+        </p>
+    </div>
+
+    </div>
+    </div>
+    <div class="container mt-5">
+
+        <div class="row justify-content-center">
+            <div class="card m-3 box-1 col-3">
+                <div class=" icon-container d-flex justify-content-center mt-4">
+                    <i class="s fa-solid fa-file-contract" style="font-size: 80px;color: white;" id="icon_services"></i>
+                </div>
+                <div class="text-container d-flex justify-content-center mt-3">
+                    <h4><b>Graphics Design</b></h4>
+                </div>
+                <p class="text-center mt-3">Lorem ipsum dolor sit amet adipisicing elit. Fuga cumque nostrum autem
+                    aspernatur hic pariatur.</p>
+            </div>
+
+            <div class="card m-3 box-1 col-3">
+                <div class=" icon-container d-flex justify-content-center mt-4">
+                    <i class="s fa-solid fa-envelope-open-text" style="font-size: 70px;color: white;"
+                        id="icon_services"></i>
+
+                </div>
+                <div class="text-container d-flex justify-content-center mt-3">
+                    <h4><b>Graphics Design</b></h4>
+                </div>
+                <p class="text-center mt-3">Lorem ipsum dolor sit amet adipisicing elit. Fuga cumque nostrum autem
+                    aspernatur hic pariatur.</p>
+            </div>
+            <div class="card m-3 box-1 col-3">
+                <div class=" icon-container d-flex justify-content-center mt-4">
+                    <i class="s fa-solid fa-envelope-open-text" style="font-size: 70px;color: white;"
+                        id="icon_services"></i>
+                </div>
+                <div class="text-container d-flex justify-content-center mt-3">
+                    <h4><b>Graphics Design</b></h4>
+                </div>
+                <p class="text-center mt-3">Lorem ipsum dolor sit amet adipisicing elit. Fuga cumque nostrum autem
+                    aspernatur hic pariatur.</p>
+            </div>
+            <div class="card m-3 box-1 col-3">
+                <div class=" icon-container d-flex justify-content-center mt-4">
+                    <i class="s fa-solid fa-pen-nib" style="font-size: 70px;color: white;" id="icon_services"></i>
+                </div>
+                <div class="text-container d-flex justify-content-center mt-3">
+                    <h4><b>Graphics Design</b></h4>
+                </div>
+                <p class="text-center mt-3">Lorem ipsum dolor sit amet adipisicing elit. Fuga cumque nostrum autem
+                    aspernatur hic pariatur.</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg mt-5">
+        <div class="j">
+            <div class=" img-set">
+                <div class="row ">
+
+                    <div class="shubham col-3 text-center container">
+                        <div class=" container justify-content-center">
+                            <h1>10,800</h1>
+
+                        </div>
+                        <p>SATISFIED CUSTOMERS</p>
+                    </div>
+                    <div class="shubham col-3 text-center container ">
+                        <div class=" container justify-content-center ">
+                            <h1>19</h1>
+
+                        </div>
+                        <p>YEAR OF EXPERIENCED</p>
+                    </div>
+                    <div class="shubham col-3 text-center container ">
+                        <div class=" container justify-content-center ">
+                            <h1>10,80</h1>
+
+                        </div>
+                        <p>HAPPY CUSTOMER</p>
+                    </div>
+                    <div class="shubham col-3 text-center container">
+                        <div class=" container justify-content-center ">
+                            <h1>900</h1>
+
+                        </div>
+                        <p>PROJECT COMPLETED</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="a tbdr d-flex container mt-5">
+            <button class="btn btn-info rounded-pill" type="button"> <b>Welcome to Project Sectio</b></button>
+
+        </div>
+        <h1 class=" mt-5 container"> <b>Check Our Projects:</b></h1>
+
+
+        <div class="container d-flex flex-wrap justify-content-center">
+            <button type="button" class="btn btn-outline-primary m-2">All</button>
+            <button type="button" class="btn btn-primary m-2">Web Development</button>
+            <button type="button" class="btn btn-outline-primary m-2">UI / UX Design</button>
+            <button type="button" class="btn btn-outline-primary m-2">Branding</button>
+            <button type="button" class="btn btn-outline-primary m-2">Graphic Design</button>
+            <button type="button" class="btn btn-outline-primary m-2">Web Design</button>
+            <button type="button" class="btn btn-outline-primary m-2">Marketing</button>
+        </div>
+
+        <div class="img container mt-5">
+            <div class="row ">
+                <div class="col-4 col-lg-4 col-6 img_banner_container">
+                    <img src="./project5 (1).jpg" class=" img-fluid img_banner mt-3" alt="">
+                    <img src="./project1 (1).jpg" class=" img-fluid img_banner mt-3" alt="">
+                    <img src="./project6.jpg" class=" img-fluid img_banner mt-3" alt="">
+                </div>
+                <div class="col-4 col-lg-4 col-6img_banner_container">
+                    <img src="./project2.jpg" class="img-fluid img_banner mt-3" alt="">
+                    <img src="./project4.jpg" class="img-fluid img_banner mt-3" alt="">
+                </div>
+                <div class="col-4 col-lg-4  img_banner_container ">
+                    <img src="./project8.jpg" class="img-fluid img_banner mt-3" alt="">
+                    <img src="./project7.jpg" class="img-fluid img_banner mt-3" alt="">
+                    <img src="./project9.jpg" class="img-fluid img_banner mt-3" alt="">
+                    <img src="./project3.jpg" class="img-fluid img_banner mt-3" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <button class="btn btn- rounded-pill" type="button" style="background-color: rgb(151, 170, 237);">
+                    <b>OUR TEAM</b></button>
+            </div>
+            <h1><b>Check Our Team:</b></h1>
+        </div>
+
+        <div class="container_ourteam">
+
+            <section class="our">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 d-flex justify-content-center mb-5">
+                            <div class="content_team_details mb-5">
+                                <div class="img_container img_1_team">
+                                    <img src="./team5.jpg" class=" rounded-circle" alt="">
+                                </div>
+                                <div class="content_team">
+                                    <h4 class=" mt-3 text-white"><b>ROGER SCOTT</b></h4>
+                                    <p class=" text-white">MARKETING MANAGER</p>
+
+                                    <div class=" text-white">
+
+                                        <span class="icon icon_profile"><i class="icon  fa-brands fa-facebook-f"
+                                                style="color: #ffffff;"></i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-instagram"
+                                                style="color: #ffffff;"> </i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-google-play"
+                                                style="color: #ffffff;"></i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-twitter"
+                                                style="color: #ffffff;"></i></span>
+                                    </div>
+                                    <p class="para_details_team text-white ">Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Nisi nemo iure sed?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 d-flex justify-content-center mb-5">
+                            <div class="content_team_details mb-5">
+                                <div class="img_container img_1_team">
+                                    <img src="./team2.jpg" class=" rounded-circle" alt="">
+                                </div>
+                                <div class="content_team">
+                                    <h4 class=" mt-3 text-white"><b>WILLIAM DOE</b></h4>
+                                    <p class=" text-white">CTO MANAGER</p>
+
+                                    <div class=" text-white">
+
+                                        <span class="icon icon_profile"><i class="icon  fa-brands fa-facebook-f"
+                                                style="color: #ffffff;"></i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-instagram"
+                                                style="color: #ffffff;"> </i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-google-play"
+                                                style="color: #ffffff;"></i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-twitter"
+                                                style="color: #ffffff;"></i></span>
+                                    </div>
+                                    <p class="para_details_team text-white ">Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Nisi nemo iure sed?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 d-flex justify-content-center mb-5">
+                            <div class="content_team_details mb-5">
+                                <div class="img_container img_1_team">
+                                    <img src="./team3.jpg" class=" rounded-circle" alt="">
+                                </div>
+                                <div class="content_team">
+                                    <h4 class=" mt-3 text-white"><b>WILLIAM WHITE</b></h4>
+                                    <p class=" text-white">CHIEF EXECUTIVE OFFICER</p>
+
+                                    <div class=" text-white">
+
+                                        <span class="icon icon_profile"><i class="icon  fa-brands fa-facebook-f"
+                                                style="color: #ffffff;"></i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-instagram"
+                                                style="color: #ffffff;"> </i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-google-play"
+                                                style="color: #ffffff;"></i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-twitter"
+                                                style="color: #ffffff;"></i></span>
+                                    </div>
+                                    <p class="para_details_team text-white ">Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Nisi nemo iure sed?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2 d-flex justify-content-center mb-5">
+                            <div class="content_team_details mb-5">
+                                <div class="img_container img_1_team">
+                                    <img src="./team4.jpg" class=" rounded-circle" alt="">
+                                </div>
+                                <div class="content_team">
+                                    <h3 class=" mt-3 text-white"><b>JEFFREY ROCKENSON</b></h3>
+                                    <p class=" text-white">PRESIDENT & CEO</p>
+
+                                    <div class=" text-white">
+
+                                        <span class="icon icon_profile"><i class="icon  fa-brands fa-facebook-f"
+                                                style="color: #ffffff;"></i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-instagram"
+                                                style="color: #ffffff;"> </i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-google-play"
+                                                style="color: #ffffff;"></i></span>
+                                        <span class="icon_profile"><i class="icon fa-brands fa-twitter"
+                                                style="color: #ffffff;"></i></span>
+                                    </div>
+                                    <p class="para_details_team text-white ">Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Nisi nemo iure sed?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="d-flex justify-content-center container">
+                <button class="btn btn-prima rounded-pill" style="background-color:rgb(151, 170, 237) ;"
+                    type="button"><b>RECENT POSTS / BLOGS</b> </button><br><br>
+
+            </div>
+
+            <h1 class=" d-flex justify-content-center container"><b>RECENT FROM BLOGS </b></h1>
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card1">
+                            <div>
+                                <img src="./blog4 (1).jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="co text_container p-2">
+                                    <span><i class="fa fa-user me-1"></i>Admin</span>
+                                    <span class="p-4"><i class="fa fa-calendar me-1"></i>JAN. 18, 2021</span>
+                                    <span><i class="fa fa-comment me-1"></i> 8 Comments</span>
+                                </p>
+                            </div>
+                            <div class="m-3">
+                                <h4><b>Tips & Tricks For Building A New Web Page</b></h4>
+                                <p>Lorem ipsum dolor sit amet consectetu adipisicing consectetur sit amet consectetu
+                                    adipisicing.</p>
+                                <a href="#" class="btn_post_blog">
+                                    <button class="btn btn-dark rounded-1 me-2">Read More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card1">
+                            <div>
+                                <img src="./blog3 (1).jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="co text_container p-2">
+                                    <span><i class="fa fa-user me-1"></i>Admin</span>
+                                    <span class="p-4"><i class="fa fa-calendar me-1"></i>JAN. 18, 2021</span>
+                                    <span><i class="fa fa-comment me-1"></i> 8 Comments</span>
+                                </p>
+                            </div>
+                            <div class="m-3">
+                                <h4><b>Tips & Tricks For Building A New Web Page</b></h4>
+                                <p>Lorem ipsum dolor sit amet consectetu adipisicing consectetur sit amet consectetu
+                                    adipisicing.</p>
+                                <a href="#" class="btn_post_blog">
+                                    <button class="btn btn-dark rounded-1 me-2">Read More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card1">
+                            <div>
+                                <img src="./blog1 (1).jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="co text_container p-2">
+                                    <span><i class="fa fa-user me-1"></i>Admin</span>
+                                    <span class="p-4"><i class="fa fa-calendar me-1"></i>JAN. 18, 2021</span>
+                                    <span><i class="fa fa-comment me-1"></i> 8 Comments</span>
+                                </p>
+                            </div>
+                            <div class="m-3">
+                                <h4><b>Tips & Tricks For Building A New Web Page</b></h4>
+                                <p>Lorem ipsum dolor sit amet consectetu adipisicing consectetur sit amet consectetu
+                                    adipisicing.</p>
+                                <a href="#" class="btn_post_blog">
+                                    <button class="btn btn-dark rounded-1 me-2">Read More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="l">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-5 col-sm-5 col-7 text-white mt-5">
+                            <div class="content">
+                                <h3 class="heading_logo text-white">Logo.</h3>
+                                <p class="address_para">203 Fake St. San Francisco,<br> California, USA</p>
+                                <div>
+                                    <p><b>Phone:</b> 123-456789 99
+                                        <b>Email:</b>Info@gmail.com
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="contact_para"><span class="call_us">Phone:</span>123-456789 99</p>
+                                    <p class="contact_para"><span class="call_us">Email:</span>Info@gmail.com</p>
+                                </div>
+
+
+                                <div class=" social_media_profiles mt-3">
+                                    <div class="row">
+
+                                        <div class="ic col-1 p-1 d-flex justify-content-center rounded-1 shadow-none">
+                                            <span class=" social_link_footer"><i
+                                                    class="fa-brands fa-facebook-f"></i></span>
+                                        </div>
+                                        <div class="ic col-1 p-1 d-flex justify-content-center">
+                                            <span class=" social_link_footer"><i
+                                                    class="fa-brands fa-instagram"></i></span>
+                                        </div>
+                                        <div class="ic col-1 p-1  d-flex justify-content-center">
+                                            <span class=" social_link_footer"><i
+                                                    class="fa-brands fa-instagram"></i></span>
+                                        </div>
+                                        <div class="ic col-1 p-1  d-flex justify-content-center">
+                                            <span class=" social_link_footer"><i
+                                                    class="fa-brands fa-twitter"></i></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-3 col-5 text-white mt-5 ">
+                            <h3 class="heading_footer_part">Pages</h3>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6 mb-4 text-white mt-5">
+                            <h3 class="heading_footer_part">Our Services</h3>
+                        </div>
+                        <div class="col-lg-4 col-12 text-white mt-5">
+                            <h3 class="heading_footer_part">Our Newsletter</h3>
+                            <p class="para_footer_part">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, veniam neque vitae
+                                delectus officiis
+                                dolorum!
+                            </p>
+
+                            <input type="text" class="input_newsletter rounded-2 mt-5">
+                            <button class="c btn_newsletter rounded-2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO6z1Gg1kFyETk78ZCCp1K9T3lCE4p9ti7j5Ckn7vXHQ0J0g2ybxE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-4g77F2TQR8H5sCq8sW6iEVdXyz1tLgFjqKt0OltF4URXeGJzO/y76DgTS5or0zZ5W"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
